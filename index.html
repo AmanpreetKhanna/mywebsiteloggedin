@@ -1,0 +1,44 @@
+<html>
+
+<body < style="background: url(./metropage.jpg);background-repeat: no-repeat;background-size: cover;">
+
+    <script> (function (d, w, c) {
+            if (!d.getElementById("spd-busns-spt")) {
+                var n = d.getElementsByTagName('script')[0],
+                    s = d.createElement('script');
+                var loaded = false;
+                s.id = "spd-busns-spt";
+                s.async = "async";
+                s.setAttribute("data-self-init", "false");
+                s.setAttribute("data-init-type", "opt");
+                s.src = 'https://cdn.euc-freshbots.ai/assets/share/js/freshbots.min.js';
+                s.setAttribute("data-client", "aac4451ad20890fc5d6f7e481bc37f7d792a9776");
+                s.setAttribute("data-bot-hash", "7115f365465441e73a4317241c99134dc6af3c9a");
+                s.setAttribute("data-env", "prod");
+                s.setAttribute("data-region", "euc");
+                if (c) {
+                    s.onreadystatechange = s.onload = function () {
+                        if (!loaded) {
+                            c();
+                        }
+                        loaded = true;
+                    };
+                }
+                n.parentNode.insertBefore(s, n);
+            }
+        })(document, window, function () {
+            Freshbots.initiateWidget({
+                autoInitChat: false,
+                getClientParams: function () {
+                    return {
+                        "cstmr::eml": "",
+                        "cstmr::nm": ""
+                    };
+                }
+            }, function (successResponse) { }, function (errorResponse) { });
+        }); </script>
+
+
+</body>
+
+</html>
